@@ -1,7 +1,7 @@
-package pages;
+package com.simplepastapp.pages;
 
-import datadriven.SimplePast;
-import datadriven.SimplesPastFactory;
+import com.simplepastapp.datadriven.SimplePast;
+import com.simplepastapp.datadriven.SimplesPastFactory;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;

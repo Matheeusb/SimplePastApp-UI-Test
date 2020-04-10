@@ -1,4 +1,4 @@
-package datadriven;
+package com.simplepastapp.datadriven;
 
 import java.util.ArrayList;
 import java.util.List;

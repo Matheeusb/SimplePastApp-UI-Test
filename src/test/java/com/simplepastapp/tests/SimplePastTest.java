@@ -1,7 +1,10 @@
+package com.simplepastapp.tests;
+
 import static org.testng.Assert.*;
 
+import com.simplepastapp.BaseTest;
 import org.testng.annotations.Test;
-import pages.SimplePastPage;
+import com.simplepastapp.pages.SimplePastPage;
 
 public class SimplePastTest extends BaseTest {
 
