@@ -1,7 +1,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Smoke Tests" verbose="1" parallel="tests" thread-count="5">
 
-    <test name="Play until the score exceeds 100">
+    <test name="Play until you get the score X">
         <classes>
             <class name="com.simplepastapp.tests.SimplePastTest"/>
         </classes>
