@@ -1,4 +1,4 @@
-package com.simplepastapp.datadriven;
+package com.simplepastapp.object;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
