@@ -2,13 +2,13 @@
 
 Automated test project for the SimplePastApp UI layer.
 
-##Links SimplePastApp 
+## Links SimplePastApp 
 
 [Google Play](https://play.google.com/store/apps/details?id=com.simplepastapp)
 
 [Github](https://github.com/brunoklein/SimplePastApp)
 
-##Language and frameworks
+## Language and frameworks
 
 - Java 13
 - Maven
@@ -16,14 +16,14 @@ Automated test project for the SimplePastApp UI layer.
 - Lombok
 - TestNG
 
-##Execution
+## Execution
 
-####Preconditons:
+#### Preconditons:
 
 - Appium Server running (port 4723);
 - Emulator or physical device with SimplePastApp app installed
 
-####Command line execution
+#### Command line execution
 
 Using the build plugin maven-surefire-plugin and configuring it with the suiteXmlFiles tag:
 
@@ -41,4 +41,4 @@ Use -Dsuite=XmlSuiteName to call the suite
 mvn clean test -Dsuite=smoke
 ```
 
-##Contribute! :beers:
+## Contribute! :beers:
