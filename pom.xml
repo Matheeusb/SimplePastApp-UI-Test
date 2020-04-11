@@ -16,7 +16,6 @@
         <maven.target.release>13</maven.target.release>
         <maven.surefire.version>3.0.0-M4</maven.surefire.version>
         <java.client.version>7.3.0</java.client.version>
-        <selenium.java.version>4.0.0-alpha-4</selenium.java.version>
         <testng.version>7.1.0</testng.version>
         <lombok.version>1.18.12</lombok.version>
     </properties>
@@ -55,11 +54,6 @@
             <artifactId>java-client</artifactId>
             <version>${java.client.version}</version>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>org.seleniumhq.selenium</groupId>-->
-<!--            <artifactId>selenium-java</artifactId>-->
-<!--            <version>${selenium.java.version}</version>-->
-<!--        </dependency>-->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
