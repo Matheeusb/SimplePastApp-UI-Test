@@ -17,8 +17,8 @@ public abstract class BaseTest {
 
     public AppiumDriver<MobileElement> driver;
 
-    @BeforeTest()
-    public void beforeTest() throws MalformedURLException {
+    @BeforeMethod()
+    public void setUp() throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability(PLATFORM_NAME, MobilePlatform.ANDROID);
         capabilities.setCapability(DEVICE_NAME, "Emulador Android");
@@ -29,8 +29,8 @@ public abstract class BaseTest {
         driver = new AndroidDriver<>(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
     }
 
-    @AfterTest()
-    public void afterTest() {
+    @AfterMethod()
+    public void tearDown() {
         driver.quit();
     }
 }
