@@ -20,8 +20,8 @@ Automated test project for the SimplePastApp UI layer.
 
 #### Preconditons:
 
-- Appium Server running (port 4723);
-- Emulator or physical device with SimplePastApp app installed
+- Appium Server be installed.
+- Emulator or physical device with SimplePastApp app installed.
 
 #### Command line execution
 
@@ -35,7 +35,7 @@ Using the build plugin maven-surefire-plugin and configuring it with the suiteXm
 </configuration>
 ```
 
-Use -Dsuite=XmlSuiteName to call the suite
+Use -Dsuite=XmlSuiteName to call the suite.
 
 ```shell script
 mvn clean test -Dsuite=smoke

@@ -4,11 +4,11 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobilePlatform;
+import io.appium.java_client.service.local.AppiumServiceBuilder;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.*;
 
 import java.net.MalformedURLException;
-import java.net.URL;
 
 import static io.appium.java_client.remote.AndroidMobileCapabilityType.*;
 import static io.appium.java_client.remote.MobileCapabilityType.*;
@@ -26,7 +26,7 @@ public abstract class BaseTest {
         capabilities.setCapability(APP_ACTIVITY, "com.simplepastapp.MainActivity");
         capabilities.setCapability(AUTOMATION_NAME, "uiautomator2");
 
-        driver = new AndroidDriver<>(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
+        driver = new AndroidDriver<>(new AppiumServiceBuilder().usingAnyFreePort().build(), capabilities);
     }
 
     @AfterMethod()
